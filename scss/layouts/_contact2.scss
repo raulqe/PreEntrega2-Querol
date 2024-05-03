@@ -1,0 +1,40 @@
+/* CONTACT*/
+.background-header-contact {
+    background-image: url(../images/pixlr-image-generator-65eb22312e7af35202e36b5c.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Location {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+textarea {
+    width: max-content;
+    height: 40px;
+    padding-left: 40px;
+}
+
+.text-area {
+    width: 100%;
+    position: relative;
+    left: 15px;
+}
+
+.text-area-form:hover {
+    background-color: rgb(224, 224, 224);
+    color: rgb(134, 134, 134);
+    transition: 1s;
+}
+
+.form_btn_submitr {
+    padding-top: 20px;
+}
+
+.form_btn_resetr {
+    padding-left: 50px;
+    padding-top: 20px;
+}

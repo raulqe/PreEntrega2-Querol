@@ -1,0 +1,30 @@
+/*FOOTER*/
+
+footer.nav-item {
+    width: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    text-align: center;
+    transition: 1s;
+
+}
+
+.nav-item a:hover {
+    background-color: #f7f6f6;
+}
+
+.secondary-footer {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    .logo-footer {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

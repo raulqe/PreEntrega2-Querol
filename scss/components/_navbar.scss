@@ -1,0 +1,81 @@
+/* Navbar */
+.logo-nav {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: 5s;
+
+    &:hover {
+        rotate: 180deg;
+    }
+}
+
+.h1-title {
+    font-family: "Frank Ruhl Libre", serif;
+    position: relative;
+    margin: 0;
+}
+
+.navbar-nav {
+    width: 90%;
+    text-align: center;
+
+    nav.nav-item {
+        width: 150px;
+        :hover {
+            transition: 5ms;
+        }
+    }
+
+}
+
+.sidebar {
+    color: white;
+}
+
+.open-sidebar {
+    border-bottom: 1px solid white;
+    transition: 10ms;
+
+    :hover {
+        background-color: rgb(139, 139, 137);
+    }
+}
+
+/* Second header section Image + btn*/
+
+.background-header-index {
+    background-image: url(../images/pixlr-image-generator-65eb22312e7af35202e36b5b.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .btn_header {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 300px;
+        height: 30px;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: 40px;
+        background-color: gold;
+        padding: 10px 50px 20px 50px;
+        border: 1px solid black;
+        transition: 1.5s;
+
+        &:hover {
+            box-shadow: 2px 2px 2px #f7f6f6;
+            top: 50px;
+        }
+    }
+}

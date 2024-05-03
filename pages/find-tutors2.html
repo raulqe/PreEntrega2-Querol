@@ -7,21 +7,21 @@
         <!--Boostrap tag link-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <!--Style tag-->
-        <link rel="stylesheet" href="../style/stylebst.css">
+        <link rel="stylesheet" href="../style/style.css">
         <!--Title + Author of the document-->
         <meta content="Raúl Querol" name="author">
         <title>Find tutors</title>
     </head>
 
     <body >
-        <header>
+        <header class="background-header-find-tutors">
           <!--Nav-bar-->
           <nav class="navbar navbar-expand-lg bg-secondary border-bottom ">
             <div class="container-fluid">
               <div class="logo">
                 <img class="logo-nav navbar-brand " src="../images/logo/abst_logo1.png"
                   alt="Origo logo. Two concentric circles involved within an other circle which has two spheres, one on the top right and the other one on the bottom left.">
-                <a class="navbar-brand h1-title text-white  " href="../indexBst.html" target="_blank">rigo Project</a>
+                <a class="navbar-brand h1-title text-white  " href="../indexBst.html" target="_blank">rig<span class="letter-decoration">o</span> Pr<span class="letter-decoration">o</span>ject</a>
               </div>
               <button class="navbar-toggler border-1  border-light " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -49,11 +49,7 @@
               </div>
             </div>
           </nav>
-          <div class="header_ilustration b1">
-            <img class="ilustration_header " src="../images/pixlr-image-generator-65eb22312e7af35202e36b5a.png"
-              alt="Illustration of a green table with some colored books,one grey laptop and the world globe on the top.">
-          </div>
-   
+          
         </header>
         <main class="box">
           <!--First-main-section Article-->
@@ -70,18 +66,43 @@
                 numquam dicta! Nesciunt nisi qui, tempore dicta accusantium voluptate temporibus minus error! Lorem
                 ipsum dolor sit amet consectetur adipisicing elit. Rem, odit odio tenetur modi iure labore
                  </p>
+                <iframe class="video" src="https://www.youtube.com/embed/x_GpZpdhgzQ?si=D7-Qx3PsXw8h2vu2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </article>
           </section>
-          <section class="box-container  b3 ">
-            <div class="video">
-                <iframe class="video-you" src="https://www.youtube.com/embed/x_GpZpdhgzQ?si=D7-Qx3PsXw8h2vu2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+
+          <section class="box-container  b3 container-map-continent "> 
+            <svg  xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-geo-alt-fill geo-loc-Eur" viewBox="0 0 16 16" >
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+            <svg  xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-geo-alt-fill geo-loc-Asi" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+            <svg  xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-geo-alt-fill geo-loc-Aus" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+            <svg  xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-geo-alt-fill geo-loc-Afr" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+            <svg  xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-geo-alt-fill geo-loc-NAme" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+            <svg  xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-geo-alt-fill geo-loc-SAme" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+            <form class="search-tutors-continet" action="#">
+              <input class="input-search-btn" type="text" placeholder="Search your tutor" name="search">
+              <button class="search-btn" type="submit">
+                <svg  class="search-svg" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+              </button>
+            </form>
           </section> 
 
-          <section class="box-container  b5">
-            <h2 class="card_title">Find tutors steps Title</h2>
+          <section class="box-container  b5 tutors-card">
+            
+            <h2 class="card-title-tutors"> How find your tutors</h2>
             <div class="card-continer">
-      
               <!--First_card-->
               <div class="card rounded-card rounded-circle" id="card_1_reason">
                 <div class="card_border_number">
@@ -90,11 +111,12 @@
                   </div>
                 </div>
       
-                <h2 class="subtitle">Subtitle</h2>
+                <h3 class="subtitle">Subtitle</h3>
                 <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, quam neque ex
                   quas deserunt.
                 </p>
               </div>
+
               <!--Second_card-->
       
               <div class="card rounded-card rounded-circle" id="card_2_reason">
@@ -104,12 +126,11 @@
                   </div>
                 </div>
       
-                <h2 class="subtitle">Subtitle</h2>
+                <h3 class="subtitle">Subtitle</h3>
                 <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nam blanditiis
                   expedit quam
                   neque.</p>
               </div>
-             
             </div>
           </section>
 

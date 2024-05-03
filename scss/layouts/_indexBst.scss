@@ -1,0 +1,380 @@
+/* General style elements */
+
+/* BODY */
+body {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgb(187, 188, 193);
+
+    h1 h2 h3 {
+        font-family: "Frank Ruhl Libre", serif;
+    }
+
+    p {
+        font-family: "Roboto", sans-serif;
+
+    }
+
+    a {
+        font-family: "Roboto", sans-serif;
+        font-size: smaller;
+        color: black;
+        text-decoration: none;
+    }
+
+    .bg-secondary {
+        background: linear-gradient(#bbbcc1, #6b6b6c);
+    }
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    background-color: rgb(165, 165, 170);
+    border-bottom: 1px solid black;
+}
+
+
+
+/*MAIN SECTION*/
+
+/* General main elements */
+
+.box-container {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Grid template areas declaration*/
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas:
+
+        "box2 box3"
+        "box5 box5"
+        "box7 box7"
+        "box4 box4";
+
+    overflow: hidden;
+
+}
+
+
+/* Grid area first section  box-container */
+
+.b2 {
+    grid-area: box2;
+    flex-flow: column nowrap;
+    height: max-content;
+    text-align: justify;
+    align-items: center;
+    background-color: rgb(187, 188, 193);
+    padding-bottom: 15px;
+
+    .text-container {
+        background-color: rgba(225, 225, 227, 0.527);
+        max-width: 100%;
+        max-height: 700px;
+        background: linear-gradient(to top, #6b6b6c, #bbbcc1);
+        box-shadow: 3px 3px 3px 3px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        height: 50px;
+        padding-top: 15px;
+        font-size: 1.2rem;
+
+    }
+
+    p {
+        display: flex;
+        justify-content: justify;
+        width: 100%;
+        max-width: 380px;
+        max-height: max-content;
+        font-size: 0.9rem;
+
+    }
+
+    .video_you .video {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        border: none;
+    }
+
+    iframe:hover {
+        border: 2px solid #f7f6f6;
+    }
+}
+
+/* Grid area second section  box-container */
+.b3 {
+    grid-area: box3;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgb(187, 188, 193);
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+.origo-world {
+    background-image: url(../images/planet.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.logo-title-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    text-shadow: black 3px -3px;
+
+    .logo-title {
+        width: 75%;
+        height: auto;
+        border-radius: 200px;
+        position: relative;
+        top: 250px;
+        color: #f7f6f6;
+        font-size: 2.5rem;
+        text-shadow: 3px solid #6b6b6c;
+        transition: 2.5s;
+        z-index: 2;
+
+        &:hover {
+            transform: scale(50%);
+        }
+    }
+
+    .logo-world {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        bottom: 90px;
+        right: 5px;
+        opacity: 60%;
+        z-index: 1;
+    }
+
+}
+
+/* Grid area third section  cards */
+
+.b5 {
+    grid-area: box5;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgb(238 235 223);
+    width: 100%;
+    height: 650px;
+    padding: 10px;
+
+    border-top: 1px solid black;
+
+    .card_title {
+        top: 30px;
+    }
+
+    .card-continer {
+        max-width: 100%;
+        height: 650px;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+        align-items: center;
+
+        h2 {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            position: relative;
+            top: 5px;
+            width: 50%;
+            height: 50px;
+            font-size: 1.5rem;
+            color: black;
+
+        }
+    }
+    .card {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        justify-content: center;
+    
+        border: 1px solid black;
+        max-width: 400px;
+        min-height: 250px;
+        padding: 15px 15px 15px 15px;
+        background-color: #f7f6f6;
+    }
+    .card_border_number {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        justify-content: center;
+        left: 0px;
+        bottom: 5px;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+    }
+    .card_border_span {
+        width: 25px;
+        height: 25px;
+        border: 2px solid black;
+        position: relative;
+        left: 5px;
+        bottom: 2px;
+    }
+    .card_number {
+        width: 15px;
+        height: 15px;
+        font-weight: 700;
+        position: relative;
+        left: 4px;
+        bottom: 2px;
+    }
+    
+    .subtitle {
+        padding-bottom: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        height: 30px;
+    }
+    .content {
+        font-size: 0.9rem;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        text-align: justify;
+    }
+    
+}
+.card-reason-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-reason-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+.card-img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+
+/* Grid area fourth section  (Download buttons) */
+
+.b7 {
+    grid-area: box7;
+    flex-flow: row nowrap;
+    background: linear-gradient(#bbbcc1, #ababac);
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid black;
+    justify-content: space-around;
+    .download_title {
+        font-size: 1rem;
+        min-width: 80px;
+        height: 40px;
+        padding-right: 15px;
+        padding-top: 5px;
+    }
+    .btn_box_apple {
+        width: 100px;
+        height: 50px;
+        padding-top: 4px;
+    }
+    .btn_box_Playstr {
+        width: 100px;
+        height: 40px;
+    }
+    .btn_dwl {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-size: x-small;
+        font-style: normal;
+        color: #f7f6f6;
+        background-color: rgb(101, 108, 101);
+        width: 140px;
+        height: 80px;
+        padding: 10px;
+        text-align: center;
+        &:hover {
+            background-color: rgb(136, 138, 136);
+        }
+    }
+    
+}
+
+/* Grid area fifth section  (carousel) */
+
+.b4 {
+    grid-area: box4;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: rgb(187, 188, 193);
+    width: 100%;
+    height: 350px;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    .clients_title {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+    
+    .carousel-section {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .client-experiences {
+        width: 100%;
+        height: 180px;
+        object-fit: scale-down;
+    }
+
+}
+
+
+/*End main section*/
+
+
+/*End IndexBst document*/

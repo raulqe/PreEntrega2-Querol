@@ -1,0 +1,54 @@
+/*BECOME A TUTOR*/
+.background-header-become-tutor {
+    background-image: url(../images/pixlr-image-generator-65eb22312e7af35202e36b5a.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tutors-benefits-section {
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/office-teaching.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    .tutors_benefits {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        z-index: 1;
+        h2 {
+            padding-bottom: 40px;
+            font-weight: 700;
+            z-index: 1;
+        }
+        p {
+            font-size: medium;
+            font-weight: 500;
+            background: rgba(240, 208, 79, 0.8);
+            padding: 15px;
+            z-index: 1;
+        }
+    }
+}
+
+
+.table-section {
+    background-image: url(../images/betutor-img.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .your_plan {
+        opacity: 90%;
+        z-index: 2;
+    }
+    .btn-choose {
+        background: rgb(227, 227, 227);
+        z-index: 2;
+    } 
+}
+
+/*End become a tutor*/
